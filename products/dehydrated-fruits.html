@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maucho | Premium Sri Lankan Export</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="top-announcement-bar">
+        <p>Premium Sri Lankan cultivated wholesale supplier of fruits and products</p>
+    </div>
+
+    <header class="main-header">
+        <div class="nav-container">
+            
+            <div class="logo-area">
+                <a href="/" class="header-logo-link">
+                <img src="../images/logo.png" alt="Maucho International logo" class="header-logo-img">
+            </a>
+            </div>
+
+            <nav class="nav-links">
+                <div class="nav-item">
+                    <a href="/home" class="nav-link">Home</a>
+                </div>
+
+                <div class="nav-item has-dropdown">
+                    <a href="/products" class="nav-link">Products <span class="arrow">▼</span></a>
+                    
+                    <div class="dropdown-card mega-card">
+                        <div class="card-arrow"></div>
+                        <div class="dropdown-grid">
+                            <a href="/products/dehydrated-fruits" class="dropdown-item">
+                                <strong>Dehydrated Fruits</strong>
+                                <p>Mango, Pineapple, Banana & more</p>
+                            </a>
+                            <a href="/products/powders" class="dropdown-item">
+                                <strong>Powders</strong>
+                                <p>Premium Moringa & herbal powders</p>
+                            </a>
+                            <a href="/products/spices" class="dropdown-item">
+                                <strong>Spices</strong>
+                                <p>Authentic Ceylon Cinnamon & spices</p>
+                            </a>
+                            <a href="/products/fresh-fruits" class="dropdown-item">
+                                <strong>Fresh Fruits</strong>
+                                <p>Locally sourced tropical fruits</p>
+                            </a>
+                            <a href="/products/other" class="dropdown-item full-width">
+                                <strong>Other Products</strong>
+                                <p>Explore our extended Sri Lankan export catalog</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item has-dropdown">
+                    <a href="/about" class="nav-link">About Us <span class="arrow">▼</span></a>
+                    
+                    <div class="dropdown-card standard-card">
+                        <div class="card-arrow"></div>
+                        <a href="../about-us/team" class="dropdown-item">
+                            <strong>Our Team</strong>
+                            <p>The experts behind Maucho</p>
+                        </a>
+                        <a href="../about-us/branches" class="dropdown-item">
+                            <strong>Branches</strong>
+                            <p>Our local and global presence</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="/contact" class="nav-link">Contact Us</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="/wholesale" class="btn-wholesale">Buy Wholesale</a>
+            </div>
+
+        </div>
+    </header>
+<main>
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 60px 20px;">
+    
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h1 style="font-size: 2.4rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px;">Organic Powders & Spices Portfolio</h1>
+        <p style="color: #666666; font-size: 1.05rem;">Select any option below to initialize direct international wholesale inquiries.</p>
+    </div>
+
+    <div class="catalog-slider-outer" id="powderSliderOuterFrame">
+        <div class="catalog-slider-viewport">
+            <div class="catalog-track" id="powderCatalogTrack">
+                
+                <div class="catalog-item-card" onclick="openInquiryModal('Dehydrated Watermelon')">
+                    <div class="catalog-media-box">
+                        <img src="../images/Dehydrated Watermelon.png" alt="Dehydrated Watermelon">
+                    </div>
+                    <div class="catalog-info-pane">
+                        <h2>Dehydrated Watermelon</h2>
+                    </div>
+                </div>
+
+                <div class="catalog-item-card" onclick="openInquiryModal('Dehydrated Pineapple')">
+                    <div class="catalog-media-box">
+                        <img src="../images/Dehydrated Pinapple.png" alt="Dehydrated Pineapple">
+                    </div>
+                    <div class="catalog-info-pane">
+                        <h2>Dehydrated Pineapple</h2>
+                    </div>
+                </div>
+
+                <div class="catalog-item-card" onclick="openInquiryModal('Dehydrated Strawberry')">
+                    <div class="catalog-media-box">
+                        <img src="../images/Dehydrated Strawberry.png" alt="Dehydrated Strawberry">
+                    </div>
+                    <div class="catalog-info-pane">
+                        <h2>Dehydrated Strawberry</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-nav-dots" id="powderDotContainer"></div>
+</div>
+
+<div class="modal-overlay" id="inquiryModal" onclick="closeModalOnOuterClick(event)">
+    <div class="modal-box">
+        <button class="close-modal-btn" onclick="closeInquiryModal()">&times;</button>
+        <h3 id="modalProductTitle">Product Inquiry</h3>
+        <p>Submit your estimated requirements below to establish a direct port quotation track profile.</p>
+        
+        <form action="#" method="POST" onsubmit="handleFormSubmission(event)">
+            <input type="hidden" id="selectedProduct" name="product_item">
+
+            <div class="form-group">
+                <label for="buyerName">Corporate Representative Name</label>
+                <input type="text" id="buyerName" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="buyerEmail">Corporate Purchasing Email</label>
+                <input type="email" id="buyerEmail" required placeholder="buyer@firm.com">
+            </div>
+            <div class="form-group">
+                <label for="orderVolume">Estimated Volume Requirement (kg)</label>
+                <input type="number" id="orderVolume" required placeholder="Min 500kg">
+            </div>
+            <div class="form-group">
+                <label for="remarks">Port Destinational Remarks / Custom Specs</label>
+                <textarea id="remarks" rows="3" placeholder="Specify optional custom variables here..."></textarea>
+            </div>
+            <button type="submit" class="submit-inquiry-btn">Submit Trade Desk Inquiry</button>
+        </form>
+    </div>
+</div>
+</main>
+<footer class="main-footer">
+        <div class="footer-container">
+            
+            <div class="footer-col footer-brand-info">
+                <div class="footer-col footer-brand-info">
+                <a href="/" class="footer-logo-link">
+                    <img src="../images/logo.png" alt="Maucho International Logo" class="footer-logo-img">
+                </a>
+            </div>
+                <p class="brand-desc">Premium agricultural sourcing and boutique bulk export execution from Colombo, Sri Lanka to global distribution rings.</p>
+                <div class="compliance-mini-tags">
+                    <span>FDA Registered</span> • <span>EU Compliant</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Corporate Portal</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#home">Home Base</a></li>
+                    <li><a href="#about-us">Our Heritage</a></li>
+                    <li><a href="#the-standard">The Maucho Standard</a></li>
+                    <li><a href="#contact-us">Trade Desk Inquiry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Export Ranges</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#products">Dehydrated Fruits</a></li>
+                    <li><a href="#products">Low-Temp Herbal Powders</a></li>
+                    <li><a href="#products">Pure Ceylon Spices</a></li>
+                    <li><a href="maucho-company-profile.pdf" download>Corporate Catalog (PDF)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-intel-subscribe">
+                <h4 class="footer-col-title">Market Intelligence</h4>
+                <p class="intel-desc">Subscribe to our quarterly Sri Lankan Crop & Sourcing Report for global procurement managers.</p>
+                <form class="footer-subscribe-form" action="#" method="POST">
+                    <input type="email" required placeholder="buyer@company.com" aria-label="Corporate Email">
+                    <button type="submit" class="btn-intel-submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="footer-bottom-container">
+                <p class="copyright-text">&copy; 2026 <a href="https://www.maucho.shop" style="text-decoration: none; color: #ffffff;">Maucho International</a> Sri Lanka. All Rights Reserved.</p>
+                    <ul class="footer-legal-links">
+                    <li><a href="#">Terms of Global Trading</a></li>
+                    <li><a href="#">FOB/CIF Liability Clauses</a></li>
+                    <li><a href="#">Privacy & Data Protection</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
